@@ -1,1 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sonika Textiles & Readymades - Sarees, readymades, men's wear, kids wear and family fashion." />
+  <meta name="theme-color" content="#7c2d12" />
+  <title>Sonika Textiles & Readymades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="announcement" class="announcement"></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Sonika Textiles home">
+        <span class="brand-mark">ST</span>
+        <span><strong id="brandName">Sonika Textiles</strong><small>Textiles & Readymades</small></span>
+      </a>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav id="mainNav" class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">SONIKA TEXTILES & READYMADES</span>
+          <h1 id="heroTitle">New styles. Trusted quality.</h1>
+          <p id="heroText">Sarees, readymades, kids wear, men's wear and family collections — all in one place.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">Shop Collections</a>
+            <a id="heroWhatsapp" class="btn secondary" target="_blank" rel="noopener">WhatsApp Order</a>
+          </div>
+          <div class="trust-row">
+            <span>✓ Family Fashion</span><span>✓ WhatsApp Orders</span><span>✓ New Arrivals</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Fashion showcase">
+          <div class="art-card art-main"><span>SAREES</span></div>
+          <div class="art-card art-small top"><span>MEN</span></div>
+          <div class="art-card art-small bottom"><span>KIDS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">COLLECTIONS</span><h2>Shop by category</h2></div><p>Fresh designs for every member of your family.</p></div>
+        <div class="category-grid">
+          <button class="category-card" data-filter="Sarees"><span class="category-icon">✦</span><h3>Sarees</h3><p>Traditional, festive & daily wear</p></button>
+          <button class="category-card" data-filter="Women"><span class="category-icon">◆</span><h3>Women's Wear</h3><p>Readymades & fashion styles</p></button>
+          <button class="category-card" data-filter="Men"><span class="category-icon">▰</span><h3>Men's Wear</h3><p>Shirts, pants & essentials</p></button>
+          <button class="category-card" data-filter="Kids"><span class="category-icon">★</span><h3>Kids Wear</h3><p>Comfortable colourful outfits</p></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section soft-bg">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">NEW ARRIVALS</span><h2>Featured products</h2></div><p>Photos added from the admin panel will automatically appear here.</p></div>
+        <div class="filter-row" id="filters">
+          <button class="chip active" data-filter="All">All</button>
+          <button class="chip" data-filter="Sarees">Sarees</button>
+          <button class="chip" data-filter="Women">Women</button>
+          <button class="chip" data-filter="Men">Men</button>
+          <button class="chip" data-filter="Kids">Kids</button>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+        <div id="emptyProducts" class="empty-state hidden">No products in this category yet.</div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">GALLERY</span><h2>Store & style gallery</h2></div><p>Your newest uploaded photos can also be shown in this gallery.</p></div>
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">ABOUT US</span>
+          <h2>Fashion made easy for every family</h2>
+          <p>Sonika Textiles & Readymades brings together sarees, readymades, men's wear and kids wear with easy WhatsApp ordering and direct store contact.</p>
+          <p>Use the admin page to keep your website fresh by adding product photos, prices, offers and new arrivals without changing the page code.</p>
+        </div>
+        <div class="info-panel">
+          <h3>Why shop with us?</h3>
+          <div class="info-item"><span>01</span><div><strong>Wide selection</strong><p>Family fashion across multiple categories.</p></div></div>
+          <div class="info-item"><span>02</span><div><strong>Direct ordering</strong><p>Customers can send enquiries instantly on WhatsApp.</p></div></div>
+          <div class="info-item"><span>03</span><div><strong>Easy updates</strong><p>Add new product photos from the admin dashboard.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">CONTACT</span><h2>Visit or contact Sonika Textiles</h2></div><p>Call, WhatsApp or use Google Maps to reach us.</p></div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-line"><span>☎</span><div><small>Phone</small><a id="phoneLink"></a></div></div>
+            <div class="contact-line"><span>✉</span><div><small>Email</small><a id="emailLink"></a></div></div>
+            <div class="contact-line"><span>⌖</span><div><small>Address</small><p id="addressText"></p></div></div>
+            <div class="contact-line"><span>GST</span><div><small>GSTIN</small><p id="gstText"></p></div></div>
+            <div class="social-row">
+              <a id="facebookLink" target="_blank" rel="noopener">Facebook</a>
+              <a id="instagramLink" target="_blank" rel="noopener">Instagram</a>
+              <a id="mapLink" target="_blank" rel="noopener">Google Maps</a>
+            </div>
+          </div>
+          <div class="map-card"><iframe id="mapFrame" title="Sonika Textiles location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong id="footerName">Sonika Textiles & Readymades</strong><p>Style for the whole family.</p></div>
+      <div><a href="#products">Products</a><a href="#contact">Contact</a><a href="admin.html">Admin</a></div>
+      <div><p>© <span id="year"></span> Sonika Textiles. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <a id="floatWhatsapp" class="float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp Sonika Textiles">WhatsApp</a>
+
+  <dialog id="productDialog" class="product-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close">×</button>
+    <img id="dialogImage" alt="Product" />
+    <div class="dialog-content"><span id="dialogCategory" class="badge"></span><h3 id="dialogName"></h3><p id="dialogPrice" class="price"></p><p id="dialogDescription"></p><a id="dialogWhatsapp" class="btn primary" target="_blank" rel="noopener">Enquire on WhatsApp</a></div>
+  </dialog>
+
+  <script type="module" src="site.js"></script>
+</body>
+</html>
